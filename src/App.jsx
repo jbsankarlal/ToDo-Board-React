@@ -1,14 +1,22 @@
 import { useState } from 'react'
-import './App.css'
+import './index.css'
 import InputBox from './components/InputBox'
 
 function App() {
 
   const [tasklist, setTasklist] = useState([])
+  console.log(tasklist);
   return (
     <>
-      <h1>TO DO BOARD</h1>
+      <h1 className='font-semibold'>TO DO BOARD</h1>
       <InputBox tasklist={tasklist} setTasklist={setTasklist} />
+      <div>
+        {
+          tasklist.map((task, index) =>
+            <li key={index}>{task}</li>
+          )
+        }
+      </div>
     </>
   )
 }
