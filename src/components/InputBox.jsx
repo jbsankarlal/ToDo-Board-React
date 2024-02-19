@@ -14,8 +14,8 @@ const InputBox = ({ tasklist, setTasklist }) => {
 
         <>
             <form action="">
-                <input className="border rounded px-8" type="text" placeholder="Add a New Task" value={input} onChange={(e) => setInput(e.target.value)} />
-                <button className="bg-violet-200" onClick={handleAddTask}>ADD</button>
+                <input className="border rounded px-8" type="text" placeholder="Enter task name" value={input} onChange={(e) => setInput(e.target.value)} />
+                <button className="bg-violet-200 border-rounded" onClick={handleAddTask}>ADD NEW TASK</button>
             </form>
         </>
     )
