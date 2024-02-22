@@ -8,7 +8,7 @@ function App() {
   console.log(tasklist, "tasklist");
   return (
     <>
-      <h1 className='font-semibold'>TO DO BOARD</h1>
+      <h1 className='font-semibold color-violet'>TO DO BOARD</h1>
       <InputBox tasklist={tasklist} setTasklist={setTasklist} />
       <div>
         {

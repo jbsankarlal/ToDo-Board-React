@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "./index.css"
+import "../index.css"
 
 const InputBox = ({ tasklist, setTasklist }) => {
     const [input, setInput] = useState("")
@@ -14,8 +14,8 @@ const InputBox = ({ tasklist, setTasklist }) => {
 
         <>
             <form action="">
-                <input className="border rounded px-8" type="text" placeholder="Enter task name" value={input} onChange={(e) => setInput(e.target.value)} />
-                <button className="bg-violet-200 border-rounded" onClick={handleAddTask}>ADD NEW TASK</button>
+                <input className="border rounded px-2" type="text" placeholder="Enter task name" value={input} onChange={(e) => setInput(e.target.value)} />
+                <button className="bg-red-500" onClick={handleAddTask}>ADD NEW TASK</button>
             </form>
         </>
     )
