@@ -2,7 +2,8 @@ import { useState } from "react"
 import "../index.css"
 
 const InputBox = ({ tasklist, setTasklist }) => {
-    const [input, setInput] = useState("")
+    const [input1, setInput1] = useState("");
+    const [input, setInput] = useState("");
     console.log(input);
 
     const handleAddTask = (e) => {
